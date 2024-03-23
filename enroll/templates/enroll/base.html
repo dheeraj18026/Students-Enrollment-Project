@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-Project</title>
+
+    <link rel="stylesheet" href="{% static 'enroll/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+
+    <script src="{% static 'enroll/js/jquery.js' %}" defer></script>
+    <script src="{% static 'enroll/js/popper.js' %}" defer></script>
+    <script src="{% static 'enroll/js/all.min.js' %}" defer></script>
+    <script src="{% static 'enroll/js/bootstrap.js' %}" defer></script>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-warning">Students Enrollment Portal</h2>
+
+        {% block content %}
+        {% endblock content %}
+    </div>
+    
+</body>
+</html>
